@@ -14,6 +14,7 @@ from ROYEDITX.modules.helpers import (
     CLOSE_BTN,
     DEV_OP,
     HELP_BTN,
+    REPO,
     HELP_BUTN,
     HELP_READ,
     HELP_START,
@@ -76,7 +77,7 @@ async def help(client: LOCOPILOT, m: Message):
 async def repo(_, m: Message):
     await m.reply_text(
         text=SOURCE_READ,
-        reply_markup=InlineKeyboardMarkup(CLOSE_BTN),
+        reply_markup=InlineKeyboardMarkup(REPO),
         disable_web_page_preview=True,
     )
 
