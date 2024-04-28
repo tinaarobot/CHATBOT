@@ -42,17 +42,17 @@ async def start(_, m: Message):
         await umm.delete()
         await m.reply_photo(
             photo=random.choice(IMG),
-            caption=f"""**๏ ʜᴇʏ ʙᴀʙʏ, ɴɪᴄᴇ ᴛᴏ ᴍᴇᴇᴛ ᴜʜʜ... !**\n\n๏ **ɪ ᴀᴍ {BOT_NAME} , ᴀɪ ʙᴀsᴇ ᴄʜᴀᴛʙᴏᴛ.**\n\n๏ **ɪ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ғᴏʀ ᴀᴄᴛɪᴠᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ.**\n\n๏ **ᴜsᴇ ᴍᴇ /chatbot on/off ᴀɴᴅ ғᴏʀ ᴍᴏʀᴇ /help ...**""",
+            caption=f"""**๏ ʜᴇʏ ʙᴀʙʏ, ɴɪᴄᴇ ᴛᴏ ᴍᴇᴇᴛ ᴜʜʜ... !**\n\n๏ **ɪ ᴀᴍ {BOT_NAME} , ᴀɪ ʙᴀsᴇ ᴄʜᴀᴛʙᴏᴛ.**\n\n๏ **ɪ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ғᴏʀ ᴀᴄᴛɪᴠᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ.**""",
             reply_markup=InlineKeyboardMarkup(DEV_OP),
         )
-        await add_served_user(m.from_user.id)
-    else:
-        await m.reply_photo(
-            photo=random.choice(IMG),
-            caption=START,
-            reply_markup=InlineKeyboardMarkup(HELP_START),
-        )
-        await add_served_chat(m.chat.id)
+    #    await add_served_user(m.from_user.id)
+ #   else:
+       # await m.reply_photo(
+        #    photo=random.choice(IMG),
+       #     caption=START,
+        #    reply_markup=InlineKeyboardMarkup(HELP_START),
+     #   )
+    #    await add_served_chat(m.chat.id)
 
 
 @dev.on_message(filters.command(["help"], prefixes=["+", ".", "/", "-", "?", "$"]))
@@ -63,14 +63,14 @@ async def help(client: LOCOPILOT, m: Message):
             caption=HELP_READ,
             reply_markup=InlineKeyboardMarkup(HELP_BTN),
         )
-        await add_served_user(m.from_user.id)
-    else:
-        await m.reply_photo(
-            photo=random.choice(IMG),
-            caption="**๏ ʜᴇʏ ʙᴀʙʏ...\n\n๏ ᴘʟᴢ ᴜsᴇ ᴍᴇ ɪɴ ᴘᴠᴛ. ғᴏʀ ʜᴇʟᴏ ᴄᴍᴅs..!**",
-            reply_markup=InlineKeyboardMarkup(HELP_BUTN),
-        )
-        await add_served_chat(m.chat.id)
+      #  await add_served_user(m.from_user.id)
+  #  else:
+       # await m.reply_photo(
+         #   photo=random.choice(IMG),
+          #  caption="**๏ ʜᴇʏ ʙᴀʙʏ...\n\n๏ ᴘʟᴢ ᴜsᴇ ᴍᴇ ɪɴ ᴘᴠᴛ. ғᴏʀ ʜᴇʟᴏ ᴄᴍᴅs..!**",
+          #  reply_markup=InlineKeyboardMarkup(HELP_BUTN),
+       # )
+       # await add_served_chat(m.chat.id)
 
 
 @dev.on_message(filters.command("repo") & ~filters.bot)
@@ -82,8 +82,8 @@ async def repo(_, m: Message):
     )
 
 
-@dev.on_message(filters.new_chat_members)
-async def welcome(_, m: Message):
-    for member in m.new_chat_members:
-        await m.reply_photo(photo=random.choice(IMG), caption=START)
+#@dev.on_message(filters.new_chat_members)
+#async def welcome(_, m: Message):
+#    for member in m.new_chat_members:
+     #   await m.reply_photo(photo=random.choice(IMG), caption=START)
           
