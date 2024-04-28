@@ -4,6 +4,7 @@ from pyrogram.types import Message
 from ROYEDITX import OWNER, dev
 from ROYEDITX.database.chats import get_served_chats
 from ROYEDITX.database.users import get_served_users
+from pyrogram.types import InlineKeyboardMarkup
 
 
 @dev.on_message(filters.command("stats") & filters.user(OWNER))
@@ -14,6 +15,7 @@ async def stats(cli: dev, message: Message):
         f"""ᴀʟʟ sᴛᴀᴛs ᴏғ ɴʏᴋᴀᴀ ᴄʜᴀᴛʙᴏᴛ {(await cli.get_me()).mention} :
 
 ๏ **ᴄʜᴀᴛs ➛** {chats}
-๏ **ᴜsᴇʀs ➛** {users}"""
+๏ **ᴜsᴇʀs ➛** {users}""", reply_markup=InlineKeyboardMarkup(PNG_BTN),
+    )
     )
   
