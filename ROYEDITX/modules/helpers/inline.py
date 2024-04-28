@@ -11,7 +11,7 @@ DEV_OP = [
         ),
     ],
     [
-        InlineKeyboardButton(text="ʀᴇᴘᴏ", callback_data="SOURCE"),
+        InlineKeyboardButton(text="ʀᴇᴘᴏ", callback_data="gib_source"),
         InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GRP}"),
     ],
     [
