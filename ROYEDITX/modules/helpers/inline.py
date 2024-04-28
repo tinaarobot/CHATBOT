@@ -19,6 +19,7 @@ DEV_OP = [
     ],
 ]
 
+####
 PNG_BTN = [
     [
         InlineKeyboardButton(
@@ -29,7 +30,7 @@ PNG_BTN = [
     ],
 ]
 
-
+#####
 BACK = [
     [
         InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="BACK"),
@@ -37,6 +38,7 @@ BACK = [
 ]
 
 
+####
 HELP_BTN = [
     [
         InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="BACK"),
@@ -44,14 +46,14 @@ HELP_BTN = [
     ],
 ]
 
-
+#####
 CLOSE_BTN = [
     [
         InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="CLOSE"),
     ],
 ]
 
-
+####
 CHATBOT_ON = [
     [
         InlineKeyboardButton(text="ᴇɴᴀʙʟᴇ", callback_data=f"addchat"),
@@ -59,8 +61,7 @@ CHATBOT_ON = [
     ],
 ]
 
-
-
+#####
 CHATBOT_BACK = [
     [
         InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="CHATBOT_BACK"),
@@ -68,7 +69,7 @@ CHATBOT_BACK = [
     ],
 ]
 
-
+####
 HELP_START = [
     [
         InlineKeyboardButton(text="ʜᴇʟᴘ", callback_data="HELP"),
@@ -76,7 +77,7 @@ HELP_START = [
     ],
 ]
 
-
+#####
 HELP_BUTN = [
     [
         InlineKeyboardButton(
@@ -86,3 +87,11 @@ HELP_BUTN = [
     ],
 ]
 
+######
+REPO = [
+    [
+        InlineKeyboardButton(text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", callback_data="gib_source"),
+    ],
+]
+
+####
