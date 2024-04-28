@@ -61,14 +61,6 @@ CHATBOT_ON = [
 
 
 
-S_BACK = [
-    [
-        InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="SBACK"),
-        InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="CLOSE"),
-    ],
-]
-
-
 CHATBOT_BACK = [
     [
         InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="CHATBOT_BACK"),
