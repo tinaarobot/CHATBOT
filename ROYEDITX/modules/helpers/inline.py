@@ -5,43 +5,34 @@ from ROYEDITX import BOT_USERNAME, OWNER
 
 DEV_OP = [
     [
-        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", user_id=OWNER),
-        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GRP}"),
-    ],
-    [
         InlineKeyboardButton(
             text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘ ᴄᴏᴍᴍᴀɴᴅ", callback_data="HELP"),
+        InlineKeyboardButton(text="ʀᴇᴘᴏ", callback_data="SOURCE"),
+        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GRP}"),
     ],
     [
-        InlineKeyboardButton(text="ʀᴇᴘᴏ", callback_data="SOURCE"),
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="ABOUT"),
+        InlineKeyboardButton(text="ʜᴇʟᴘ ᴄᴏᴍᴍᴀɴᴅ", callback_data="HELP"),
     ],
 ]
 
 PNG_BTN = [
     [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ",
+            text="ᴀᴅᴅ ᴍᴇ",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
-    ],
-    [
-        InlineKeyboardButton(
-            text="ᴄʟᴏsᴇ",
-            callback_data="CLOSE",
-        ),
+        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url=f"https://t.me/{UPDATE_CHNL}"),
     ],
 ]
 
 
 BACK = [
     [
-        InlineKeyboardButton(text="◁", callback_data="BACK"),
+        InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="BACK"),
     ],
 ]
 
@@ -52,7 +43,7 @@ HELP_BTN = [
         InlineKeyboardButton(text="ᴛᴏᴏʟs", callback_data="TOOLS_DATA"),
     ],
     [
-        InlineKeyboardButton(text="◁", callback_data="BACK"),
+        InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="BACK"),
         InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="CLOSE"),
     ],
 ]
@@ -73,11 +64,6 @@ CHATBOT_ON = [
 ]
 
 
-MUSIC_BACK_BTN = [
-    [
-        InlineKeyboardButton(text="sᴏᴏɴ", callback_data=f"soom"),
-    ],
-]
 
 S_BACK = [
     [
