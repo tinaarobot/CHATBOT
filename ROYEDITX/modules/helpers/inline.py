@@ -39,10 +39,6 @@ BACK = [
 
 HELP_BTN = [
     [
-        InlineKeyboardButton(text="ᴄʜᴀᴛ-ʙᴏᴛ", callback_data="CHATBOT_CMD"),
-        InlineKeyboardButton(text="ᴛᴏᴏʟs", callback_data="TOOLS_DATA"),
-    ],
-    [
         InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="BACK"),
         InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="CLOSE"),
     ],
@@ -67,7 +63,7 @@ CHATBOT_ON = [
 
 S_BACK = [
     [
-        InlineKeyboardButton(text="◁", callback_data="SBACK"),
+        InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="SBACK"),
         InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="CLOSE"),
     ],
 ]
@@ -75,7 +71,7 @@ S_BACK = [
 
 CHATBOT_BACK = [
     [
-        InlineKeyboardButton(text="◁", callback_data="CHATBOT_BACK"),
+        InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="CHATBOT_BACK"),
         InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="CLOSE"),
     ],
 ]
@@ -98,18 +94,3 @@ HELP_BUTN = [
     ],
 ]
 
-
-ABOUT_BTN = [
-    [
-        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GRP}"),
-        InlineKeyboardButton(text="ʜᴇʟᴘ", callback_data="HELP"),
-    ],
-    [
-        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", user_id=OWNER),
-        InlineKeyboardButton(text="ʀᴇᴘᴏ", callback_data="SOURCE"),
-    ],
-    [
-        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url=f"https://t.me/{UPDATE_CHNL}"),
-        InlineKeyboardButton(text="◁", callback_data="BACK"),
-    ],
-]
