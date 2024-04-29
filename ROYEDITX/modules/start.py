@@ -16,7 +16,6 @@ from ROYEDITX.modules.helpers import (
     HELP_BTN,
     HELP_BUTN,
     HELP_START,
-   # START,
 )
 
 
@@ -42,15 +41,7 @@ async def start(_, m: Message):
             caption=f"""**๏ ʜᴇʏ ʙᴀʙʏ, ɴɪᴄᴇ ᴛᴏ ᴍᴇᴇᴛ ᴜʜʜ... !**\n\n๏ **ɪ ᴀᴍ {BOT_NAME} , ᴀɪ ʙᴀsᴇ ᴄʜᴀᴛʙᴏᴛ.**\n\n๏ **ɪ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ғᴏʀ ᴀᴄᴛɪᴠᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ.**""",
             reply_markup=InlineKeyboardMarkup(DEV_OP),
         )
-    #    await add_served_user(m.from_user.id)
- #   else:
-       # await m.reply_photo(
-        #    photo=random.choice(IMG),
-       #     caption=START,
-        #    reply_markup=InlineKeyboardMarkup(HELP_START),
-     #   )
-    #    await add_served_chat(m.chat.id)
-
+ ##############
 
 @dev.on_message(filters.command(["help"], prefixes=["+", ".", "/", "-", "?", "$"]))
 async def help(client: LOCOPILOT, m: Message):
@@ -60,18 +51,7 @@ async def help(client: LOCOPILOT, m: Message):
             caption=f"""๏ **ʜᴇʀᴇ ɪꜱ ʜᴇʟᴘ ᴍᴇɴᴜ ꜰᴏʀ {BOT_NAME} !\n\n๏ ᴀsᴋ ʏᴏᴜʀ ᴅᴏᴜʙᴛs ᴀᴛ ɢʀᴏᴜᴘ.\n\n๏ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ ➠ /**""",
             reply_markup=InlineKeyboardMarkup(HELP_BTN),
         )
-
-  #########
-      #  await add_served_user(m.from_user.id)
-  #  else:
-       # await m.reply_photo(
-         #   photo=random.choice(IMG),
-          #  caption="**๏ ʜᴇʏ ʙᴀʙʏ...\n\n๏ ᴘʟᴢ ᴜsᴇ ᴍᴇ ɪɴ ᴘᴠᴛ. ғᴏʀ ʜᴇʟᴏ ᴄᴍᴅs..!**",
-          #  reply_markup=InlineKeyboardMarkup(HELP_BUTN),
-       # )
-       # await add_served_chat(m.chat.id)
-
-#########
+  #############
 
 @dev.on_message(filters.command("repo") & ~filters.bot)
 async def repo(_, m: Message):
@@ -80,10 +60,4 @@ async def repo(_, m: Message):
         reply_markup=InlineKeyboardMarkup(CLOSE_BTN),
         disable_web_page_preview=True,
     )
-
-
-#@dev.on_message(filters.new_chat_members)
-#async def welcome(_, m: Message):
-#    for member in m.new_chat_members:
-     #   await m.reply_photo(photo=random.choice(IMG), caption=START)
-          
+#########______--------+-------______####$$$$$
