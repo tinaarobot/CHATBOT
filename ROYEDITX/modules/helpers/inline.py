@@ -89,10 +89,3 @@ HELP_BUTN = [
 ]
 
 ######
-REPO = [
-    [
-        InlineKeyboardButton(text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", callback_data="gib_source"),
-    ],
-]
-
-####
