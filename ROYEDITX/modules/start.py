@@ -16,10 +16,8 @@ from ROYEDITX.modules.helpers import (
     HELP_BTN,
     REPO,
     HELP_BUTN,
-    HELP_READ,
     HELP_START,
-    SOURCE_READ,
-    START,
+   # START,
 )
 
 
@@ -60,7 +58,7 @@ async def help(client: LOCOPILOT, m: Message):
     if m.chat.type == ChatType.PRIVATE:
         hmm = await m.reply_photo(
             photo=random.choice(IMG),
-            caption=HELP_READ,
+            caption=f"""๏ **ʜᴇʀᴇ ɪꜱ ʜᴇʟᴘ ᴍᴇɴᴜ ꜰᴏʀ {BOT_NAME} !\n\n๏ ᴀsᴋ ʏᴏᴜʀ ᴅᴏᴜʙᴛs ᴀᴛ ɢʀᴏᴜᴘ.\n\n๏ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ ➠ /**"""
             reply_markup=InlineKeyboardMarkup(HELP_BTN),
         )
       #  await add_served_user(m.from_user.id)
@@ -76,7 +74,7 @@ async def help(client: LOCOPILOT, m: Message):
 @dev.on_message(filters.command("repo") & ~filters.bot)
 async def repo(_, m: Message):
     await m.reply_text(
-        text=SOURCE_READ,
+        text= f"""**๏ ᴀᴀ ɢʏᴀ ʀᴇᴘᴏ ʟᴇɴᴇ ʙᴏsᴅᴋ, ʏᴇ ᴠɪᴅᴇᴏ ᴅᴇᴋʜ ᴀᴜʀ ᴀᴘɴɪ ʀᴇᴘᴏ ʟᴇɴᴇ ᴋɪ ᴀᴀɢ ʙʜᴜᴊʜᴀ.**\n\n๏ https://x-hd.video/video/-aubree-valentine-switch-roles-fta-reality-kings.html """
         reply_markup=InlineKeyboardMarkup(REPO),
         disable_web_page_preview=True,
     )
