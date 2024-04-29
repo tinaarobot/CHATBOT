@@ -39,32 +39,10 @@ async def cb_handler(_, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(BACK),
             disable_web_page_preview=True,
         )
-  #  elif query.data == "ABOUT":
-     #   await query.message.edit(
-       #     text=ABOUT_READ,
-       #     reply_markup=InlineKeyboardMarkup(ABOUT_BTN),
-       #     disable_web_page_preview=True,
-   #     ) 
-
-   # elif query.data == "ADMINS":
-      #  await query.message.edit(
-      #      text=ADMIN_READ,
-       #     reply_markup=InlineKeyboardMarkup(MUSIC_BACK_BTN),
-    #    )
-   # elif query.data == "TOOLS_DATA":
-      #  await query.message.edit(
-       #     text=TOOLS_DATA_READ,
-       #     reply_markup=InlineKeyboardMarkup(CHATBOT_BACK),
-     #   )
     elif query.data == "BACK_HELP":
         await query.message.edit(
             text=HELP_READ,
             reply_markup=InlineKeyboardMarkup(HELP_BTN),
-        )
-    elif query.data == "CHATBOT_CMD":
-        await query.message.edit(
-            text=CHATBOT_READ,
-            reply_markup=InlineKeyboardMarkup(CHATBOT_BACK),
         )
     elif query.data == "CHATBOT_BACK":
         await query.message.edit(
@@ -76,24 +54,24 @@ async def cb_handler(_, query: CallbackQuery):
         user_status = (await query.message.chat.get_member(user_id)).status
         if user_status not in [CMS.OWNER, CMS.ADMINISTRATOR]:
             return await query.answer(
-                "๏ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴇᴠᴇɴ ᴀɴ ᴀᴅᴍɪɴ, ᴅᴏɴ'ᴛ ᴛʀʏ ᴛʜɪs ᴇxᴘʟᴏsɪᴠᴇ sʜɪᴛ!",
+                "❖ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴇᴠᴇɴ ᴀɴ ᴀᴅᴍɪɴ, ᴅᴏɴ'ᴛ ᴛʀʏ ᴛʜɪs ᴇxᴘʟᴏsɪᴠᴇ sʜɪᴛ !",
                 show_alert=True,
             )
         else:
             is_vick = vick.find_one({"chat_id": query.message.chat.id})
             if not is_vick:
-                await query.edit_message_text(f"**ᴄʜᴀᴛ-ʙᴏᴛ ᴀʟʀᴇᴀᴅʏ ᴇɴᴀʙʟᴇᴅ.**")
+                await query.edit_message_text(f"❖ ᴄʜᴀᴛ-ʙᴏᴛ ᴀʟʀᴇᴀᴅʏ ᴇɴᴀʙʟᴇᴅ.")
             if is_vick:
                 vick.delete_one({"chat_id": query.message.chat.id})
                 await query.edit_message_text(
-                    f"**๏ ᴄʜᴀᴛ-ʙᴏᴛ ᴇɴᴀʙʟᴇᴅ ʙʏ** ➛ {query.from_user.mention}."
+                    f"❖ ᴄʜᴀᴛ-ʙᴏᴛ ᴇɴᴀʙʟᴇᴅ ʙʏ ➥ {query.from_user.mention}."
                 )
     elif query.data == "rmchat":
         user_id = query.from_user.id
         user_status = (await query.message.chat.get_member(user_id)).status
         if user_status not in [CMS.OWNER, CMS.ADMINISTRATOR]:
             await query.answer(
-                "๏ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴇᴠᴇɴ ᴀɴ ᴀᴅᴍɪɴ, ᴅᴏɴ'ᴛ ᴛʀʏ ᴛʜɪs ᴇxᴘʟᴏsɪᴠᴇ sʜɪᴛ!",
+                "❖ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴇᴠᴇɴ ᴀɴ ᴀᴅᴍɪɴ, ᴅᴏɴ'ᴛ ᴛʀʏ ᴛʜɪs ᴇxᴘʟᴏsɪᴠᴇ sʜɪᴛ !",
                 show_alert=True,
             )
             return
@@ -102,10 +80,10 @@ async def cb_handler(_, query: CallbackQuery):
             if not is_vick:
                 vick.insert_one({"chat_id": query.message.chat.id})
                 await query.edit_message_text(
-                    f"**๏ ᴄʜᴀᴛ-ʙᴏᴛ ᴅɪsᴀʙʟᴇᴅ ʙʏ** ➛ {query.from_user.mention}."
+                    f"❖ ᴄʜᴀᴛ-ʙᴏᴛ ᴅɪsᴀʙʟᴇᴅ ʙʏ ➥ {query.from_user.mention}."
                 )
             if is_vick:
-                await query.edit_message_text("**๏ ᴄʜᴀᴛ-ʙᴏᴛ ᴀʟʀᴇᴀᴅʏ ᴅɪsᴀʙʟᴇᴅ.**")
+                await query.edit_message_text("❖ ᴄʜᴀᴛ-ʙᴏᴛ ᴀʟʀᴇᴀᴅʏ ᴅɪsᴀʙʟᴇᴅ.")
 
 ####
 
