@@ -29,7 +29,7 @@ OWNER = config.OWNER_ID
 # DEVS = config.SUDO_USERS | config.OWNER_ID
 
 
-class AMBOT(Client):
+class LOCOPILOT(Client):
     def __init__(self):
         super().__init__(
             name="LOCOPILOT",
