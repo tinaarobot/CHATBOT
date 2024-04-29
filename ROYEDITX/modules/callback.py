@@ -110,15 +110,4 @@ async def cb_handler(_, query: CallbackQuery):
 ####
 
 
-@LOCOPILOT.on_callback_query()
-async def gib_repo_callback(_, callback_query):
-    if query.data == "gib_source":
-    await callback_query.edit_message_media(
-        media=InputMediaVideo("https://telegra.ph/file/9235d57807362b4e227a3.mp4", has_spoiler=True),
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [CLOSE_BTN]
-            ]
-        ),
-    )
-    ####
+
