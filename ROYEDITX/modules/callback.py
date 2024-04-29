@@ -43,12 +43,12 @@ async def cb_handler(_, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(BACK),
             disable_web_page_preview=True,
         )
-  AVISHA = """  elif query.data == "ABOUT":
-        await query.message.edit(
-            text=ABOUT_READ,
-            reply_markup=InlineKeyboardMarkup(ABOUT_BTN),
-            disable_web_page_preview=True,
-        ) """
+  #  elif query.data == "ABOUT":
+     #   await query.message.edit(
+       #     text=ABOUT_READ,
+       #     reply_markup=InlineKeyboardMarkup(ABOUT_BTN),
+       #     disable_web_page_preview=True,
+   #     ) 
 
     elif query.data == "ADMINS":
         await query.message.edit(
