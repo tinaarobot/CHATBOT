@@ -6,18 +6,14 @@ from ROYEDITX import LOCOPILOT
 from ROYEDITX.database import vick
 from ROYEDITX.modules.helpers import (
     CLOSE_BTN,
-    ABOUT_READ,
-    ADMIN_READ,
     BACK,
     CHATBOT_BACK,
     CHATBOT_READ,
     DEV_OP,
     HELP_BTN,
     HELP_READ,
-    MUSIC_BACK_BTN,
     SOURCE_READ,
     START,
-    TOOLS_DATA_READ,
 )
 
 
@@ -50,16 +46,16 @@ async def cb_handler(_, query: CallbackQuery):
        #     disable_web_page_preview=True,
    #     ) 
 
-    elif query.data == "ADMINS":
-        await query.message.edit(
-            text=ADMIN_READ,
-            reply_markup=InlineKeyboardMarkup(MUSIC_BACK_BTN),
-        )
-    elif query.data == "TOOLS_DATA":
-        await query.message.edit(
-            text=TOOLS_DATA_READ,
-            reply_markup=InlineKeyboardMarkup(CHATBOT_BACK),
-        )
+   # elif query.data == "ADMINS":
+      #  await query.message.edit(
+      #      text=ADMIN_READ,
+       #     reply_markup=InlineKeyboardMarkup(MUSIC_BACK_BTN),
+    #    )
+   # elif query.data == "TOOLS_DATA":
+      #  await query.message.edit(
+       #     text=TOOLS_DATA_READ,
+       #     reply_markup=InlineKeyboardMarkup(CHATBOT_BACK),
+     #   )
     elif query.data == "BACK_HELP":
         await query.message.edit(
             text=HELP_READ,
