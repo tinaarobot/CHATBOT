@@ -3,6 +3,7 @@ from pyrogram.enums import ChatMemberStatus as CMS
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup
 
 from ROYEDITX import LOCOPILOT 
+from ROYEDITX import BOT_NAME
 from ROYEDITX.database import vick
 from ROYEDITX.modules.helpers import (
     CLOSE_BTN,
