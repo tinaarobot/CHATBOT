@@ -5,7 +5,7 @@ from pyrogram.types import CallbackQuery, InlineKeyboardMarkup
 from ROYEDITX import LOCOPILOT 
 from ROYEDITX.database import vick
 from ROYEDITX.modules.helpers import (
-    ABOUT_BTN,
+    CLOSE_BTN,
     ABOUT_READ,
     ADMIN_READ,
     BACK,
@@ -43,12 +43,13 @@ async def cb_handler(_, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(BACK),
             disable_web_page_preview=True,
         )
-    elif query.data == "ABOUT":
+  AVISHA = """  elif query.data == "ABOUT":
         await query.message.edit(
             text=ABOUT_READ,
             reply_markup=InlineKeyboardMarkup(ABOUT_BTN),
             disable_web_page_preview=True,
-        )
+        ) """
+
     elif query.data == "ADMINS":
         await query.message.edit(
             text=ADMIN_READ,
