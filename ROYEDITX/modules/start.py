@@ -26,11 +26,11 @@ async def start(_, m: Message):
             text=random.choice(EMOJIOS),
         )
         await asyncio.sleep(1.3)
-        await accha.edit("❤️")
+        await accha.edit("👻")
         await asyncio.sleep(0.2)
-        await accha.edit("💚")
+        await accha.edit("🌼")
         await asyncio.sleep(0.2)
-        await accha.edit("💙")
+        await accha.edit("🏵️")
         await asyncio.sleep(0.2)
         await accha.delete()
         umm = await m.reply_sticker(sticker=random.choice(STICKER))
@@ -56,7 +56,7 @@ async def help(client: LOCOPILOT, m: Message):
 @dev.on_message(filters.command("repo") & ~filters.bot)
 async def repo(_, m: Message):
     await m.reply_text(
-        text= f"""**๏ ᴀᴀ ɢʏᴀ ʀᴇᴘᴏ ʟᴇɴᴇ ʙᴏsᴅᴋ, ʏᴇ ᴠɪᴅᴇᴏ ᴅᴇᴋʜ ᴀᴜʀ ᴀᴘɴɪ ʀᴇᴘᴏ ʟᴇɴᴇ ᴋɪ ᴀᴀɢ ʙʜᴜᴊʜᴀ.**\n\n๏ https://x-hd.video/video/-aubree-valentine-switch-roles-fta-reality-kings.html """,
+        text= f"""❖ ʜᴇʏ ʙᴀʙʏ, ɴɪᴄᴇ ᴛᴏ ᴍᴇᴇᴛ ʏᴏᴜ ♥︎\n\n⬤ ɪ ᴀᴍ {BOT_NAME},  ᴀɪ ʙᴀsᴇ ᴄʜᴀᴛʙᴏᴛ.\n\n⬤ ɪ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ғᴏʀ ᴀᴄᴛɪᴠᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ.\n\n❖ ɪғ ʏᴏᴜ ᴡᴀɴᴛ {BOT_NAME} ʙᴏᴛ ʀᴇᴘᴏ, ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʀᴇᴘᴏ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ.""",
         reply_markup=InlineKeyboardMarkup(CLOSE_BTN),
         disable_web_page_preview=True,
     )
