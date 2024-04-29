@@ -26,7 +26,7 @@ SUPPORT_GRP = getenv("SUPPORT_GRP", "THE_FRIENDZ")
 UPDATE_CHNL = getenv("UPDATE_CHNL", "ROY_EDITX")
 
 #### ❖ ──────⊱◈◈◈⊰────── ❖
-OWNER_USERNAME = getenv("OWNER_USERNAME", "AFK_MR_ROY")
+OWNER_USERNAME = getenv("OWNER_USERNAME", "HLO_PAPA")
 
 #### ❖ ──────⊱◈◈◈⊰────── ❖
 BOT_USERNAME = getenv("BOT_USERNAME", None)
@@ -74,7 +74,7 @@ IMG = [
 
 #### ❖ ──────⊱◈◈◈⊰────── ❖
 
-EMOJI = [
+EMOJIOS = [
     "❤️",
     "🧡",
     "💛",
