@@ -5,28 +5,28 @@ from dotenv import load_dotenv
 load_dotenv()
 
 #### ❖ ──────⊱◈◈◈⊰────── ❖
-API_ID = int(getenv("API_ID", "6435225"))
+API_ID = int(getenv("API_ID", "27013344"))
 
 #### ❖ ──────⊱◈◈◈⊰────── ❖
-API_HASH = getenv("API_HASH", "4e984ea35f854762dcde906dce426c2d")
+API_HASH = getenv("API_HASH", "be5f160b65f07128459b4289c6e286ad")
 
 #### ❖ ──────⊱◈◈◈⊰────── ❖
 BOT_TOKEN = getenv("BOT_TOKEN", None)
 
 #### ❖ ──────⊱◈◈◈⊰────── ❖
-OWNER_ID = int(getenv("OWNER_ID", "6922271843"))
+OWNER_ID = int(getenv("OWNER_ID", "7062539103"))
 
 #### ❖ ──────⊱◈◈◈⊰────── ❖
 MONGO_URL = getenv("MONGO_URL", "mongodb+srv://Bikash:Bikash@bikash.yl2nhcy.mongodb.net/?retryWrites=true&w=majority")
 
 #### ❖ ──────⊱◈◈◈⊰────── ❖
-SUPPORT_GRP = getenv("SUPPORT_GRP", "THE_FRIENDZ")
+SUPPORT_GRP = getenv("SUPPORT_GRP", "https://t.me/Riseeuniverse")
 
 #### ❖ ──────⊱◈◈◈⊰────── ❖
-UPDATE_CHNL = getenv("UPDATE_CHNL", "ROY_EDITX")
+UPDATE_CHNL = getenv("UPDATE_CHNL", "https://t.me/RiseUniverseNetwork")
 
 #### ❖ ──────⊱◈◈◈⊰────── ❖
-OWNER_USERNAME = getenv("OWNER_USERNAME", "HLO_PAPA")
+OWNER_USERNAME = getenv("OWNER_USERNAME", "@Rise_Ownerr")
 
 #### ❖ ──────⊱◈◈◈⊰────── ❖
 BOT_USERNAME = getenv("BOT_USERNAME", None)
@@ -35,7 +35,7 @@ BOT_USERNAME = getenv("BOT_USERNAME", None)
 #### ❖ ──────⊱◈◈◈⊰────── ❖
 
 STICKER = [
-"CAACAgUAAx0Cd9xEawACEQlmLuvFijxhTZXjFbLPOsZFBoZzYQAC2AUAAkVZsVftrDRpvXZTAAE0BA",
+"https://t.me/addstickers/a_7062539103_by_Toga_Robot",
 "CAACAgUAAx0Cd9xEawACEQhmLuvFeujHQdaxeDtr3MZThRXa1QACkgcAArZSuVfbJAABQq5pIc80BA",
 "CAACAgUAAx0Cd9xEawACEQdmLuvFQdwX-ySKIrmq-JPWItfhhgACwQUAAi9GuVfYV7lLP7xl4zQE",
 "CAACAgUAAx0Cd9xEawACEQVmLuuiUNrymw5wWSie-agvZ-_MdgACNAQAAi9GsFf3M2dSfxH-YDQE",
@@ -58,8 +58,8 @@ STICKER = [
 #### ❖ ──────⊱◈◈◈⊰────── ❖
 
 IMG = [
-"https://graph.org/file/eaa3a2602e43844a488a5.jpg",
-"https://graph.org/file/b129e98b6e5c4db81c15f.jpg",
+"https://telegra.ph/file/db864337b0db447e83784.jpg" 
+"https://telegra.ph/file/2aa13929c52030c308f8a.jpg",
 "https://graph.org/file/3ccb86d7d62e8ee0a2e8b.jpg",
 "https://graph.org/file/df11d8257613418142063.jpg",
 "https://graph.org/file/9e23720fedc47259b6195.jpg",
